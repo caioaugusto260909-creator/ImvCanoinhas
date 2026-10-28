@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morada do Mate Imóveis | Canoinhas, SC</title>
+<meta name="description" content="Encontre casas, apartamentos, terrenos e imóveis comerciais para comprar ou alugar em Canoinhas e região.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css?v=8">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+<a class="skip" id="skip" href="#">Pular para o conteúdo</a>
+<header class="top"><div class="wrap tb">
+<a class="logo" href="#/" aria-label="Morada do Mate Imóveis, início"><img class="logo-claro" src="assets/logo.svg" alt="Morada do Mate Imóveis"><img class="logo-escuro" src="assets/logo-morada-escuro.svg" alt=""></a>
+<button class="mb" id="mb" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav class="nav" id="menu" aria-label="Principal">
+<a href="#/" data-r="">Início</a><a href="#/imoveis" data-r="imoveis">Imóveis</a><a href="#/simulador" data-r="simulador">Simulador</a>
+<a href="#/comparar" data-r="comparar">Comparar<span class="nb" id="nb-cmp">0</span></a><a href="#/favoritos" data-r="favoritos">Favoritos<span class="nb" id="nb-fav">0</span></a>
+<a href="#/agendar" data-r="agendar">Agendar visita</a><a href="#/cadastro" data-r="cadastro">Cadastrar</a><a href="#/sobre" data-r="sobre">Sobre</a><a href="#/contato" data-r="contato">Contato</a>
+</nav>
+<button class="tg" id="tg" type="button" aria-label="Alternar entre tema claro e escuro">☾ Escuro</button>
+</div></header>
+<main id="app" tabindex="-1"></main>
+<footer><div class="wrap"><div><b>Morada do Mate Imóveis</b><br>Canoinhas, Santa Catarina</div><div>Fotos de referência ilustrativas (incluindo imagens do Pexels); confirme preços, disponibilidade e condições diretamente com a imobiliária.<br>Mapa de ruas © OpenStreetMap contributors. Os pontos indicam apenas regiões aproximadas.</div></div></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="imoveis.js"></script>
+<script src="data/imoveis.js"></script>
+<script src="data/mais-imoveis.js?v=2"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/app.js?v=13"></script>
+</body>
+</html>

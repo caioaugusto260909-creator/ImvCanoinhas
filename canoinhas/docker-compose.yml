@@ -1,0 +1,8 @@
+services:
+  imobiliaria:
+    build: .
+    container_name: canoinhas_imobiliaria
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/var/www/html
